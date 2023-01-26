@@ -1,9 +1,4 @@
-Usage
 
-crack <threads> <keysize> <target>
-
-Description
-  
 crack should attempt to find the password associated to the target DES hash. It does this by trying all possible lowercase alphabetic (a-z) passwords of length up to keysize. The program should run with threads concurrent threads for speed.
 
 Linux/Unix user passwords are never stored on the system. Instead, a function called a hash is applied to the password. Then, the hashed password is stored, traditionally in /etc/passwd or more recently in /etc/shadow. The classic hash function on Unix systems is crypt(3). To make things harder on crackers, crypt also uses a two character string called a salt which it combines with the password to create the hash. Schematically:
